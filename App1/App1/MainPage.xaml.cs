@@ -23,26 +23,15 @@ namespace App1
     public sealed partial class MainPage : Page
     {
 
-        // public delegate void Page1EventHandler(object source, EventArgs e);
-        // public event Page1EventHandler OnNavigatePage1Ready;
-
         public MainPage()
         {
             this.InitializeComponent();
-           //  this.OnNavigatePage1Ready += MainPage_OnNavigateParentReady;
         }
 
-        /*
-        private void MainPage_OnNavigateParentReady(object source, EventArgs e)
-        {
-            Frame.Navigate(typeof(Page1));
-        }
-        */
 
         private void testbtn_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Page1));
-//            OnNavigatePage1Ready(this, null);
         }
     }
 }
